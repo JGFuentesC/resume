@@ -31,3 +31,6 @@ assets/photos/genai/portfolio-photos-prompts/
 # Design exploration / dev artifacts
 docs/plan.md
 ui-inspo/
+
+# Deployment scripts (infra details, keep local)
+deploy.sh
