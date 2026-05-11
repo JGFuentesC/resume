@@ -1,17 +1,17 @@
 :root {
-  /* Dark mode (default) */
-  --surface: #17130d;
-  --surface-dim: #17130d;
-  --surface-bright: #3e3831;
-  --surface-container-lowest: #120e08;
-  --surface-container-low: #201b15;
-  --surface-container: #241f19;
-  --surface-container-high: #2e2923;
-  --surface-container-highest: #39342d;
-  --on-surface: #ebe1d7;
-  --on-surface-variant: #d4c4b2;
-  --outline: #9c8f7e;
-  --outline-variant: #504538;
+  /* Dark mode (default) — deep black */
+  --surface: #050505;
+  --surface-dim: #050505;
+  --surface-bright: #1c1c1c;
+  --surface-container-lowest: #000000;
+  --surface-container-low: #090909;
+  --surface-container: #111111;
+  --surface-container-high: #1a1a1a;
+  --surface-container-highest: #222222;
+  --on-surface: #ede8e3;
+  --on-surface-variant: #b0a898;
+  --outline: #555555;
+  --outline-variant: #2a2a2a;
   --surface-tint: #f6bc67;
 
   /* Accent */
@@ -23,14 +23,14 @@
   --on-primary: #442b00;
 
   /* Light mode tokens */
-  --light-surface: #f5f5f0;
+  --light-surface: #f4f2ef;
   --light-text-primary: #1a1a1a;
   --light-text-secondary: #6b6b6b;
   --light-border: #d4d4d0;
 
   /* Dark mode tokens */
-  --dark-surface: #0a0a0a;
-  --dark-text-primary: #e8e8e0;
+  --dark-surface: #050505;
+  --dark-text-primary: #ede8e3;
   --dark-text-secondary: #888888;
   --dark-border: #2a2a2a;
 
@@ -57,7 +57,7 @@
 
   /* Spacing */
   --space-base: 8px;
-  --space-gap: 272px;
+  --space-gap: 140px;
   --space-card: 40px;
   --space-gutter: 24px;
   --space-desktop: 104px;
@@ -75,8 +75,8 @@
   --duration-slow: 800ms;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.7);
   --shadow-gold: 0 0 0 1px var(--accent-gold);
 
   /* Border radius */

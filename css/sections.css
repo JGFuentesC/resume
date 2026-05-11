@@ -41,7 +41,7 @@
 
 .hero-name {
   font-family: var(--font-display);
-  font-size: var(--text-display-xl);
+  font-size: clamp(2rem, 3.5vw, var(--text-display-xl));
   font-weight: 400;
   line-height: var(--leading-display);
   letter-spacing: var(--tracking-display);
@@ -52,25 +52,11 @@
 
 .hero-tagline {
   font-family: var(--font-display);
-  font-size: var(--text-display-md);
+  font-size: clamp(0.85rem, 1.4vw, var(--text-display-md));
   color: var(--on-surface-variant);
   text-transform: uppercase;
   letter-spacing: 0.15em;
   margin-bottom: 16px;
-}
-
-.hero-mini-photo {
-  position: absolute;
-  bottom: var(--space-desktop);
-  right: var(--space-desktop);
-  width: 64px;
-  height: 64px;
-  border-radius: var(--radius-full);
-  object-fit: cover;
-  filter: grayscale(1) contrast(1.3);
-  border: 1px solid var(--accent-gold);
-  opacity: 0.7;
-  z-index: 5;
 }
 
 @media (max-width: 768px) {
@@ -90,10 +76,6 @@
   }
   .hero-name {
     font-size: var(--text-display-lg);
-  }
-  .hero-mini-photo {
-    bottom: var(--space-mobile);
-    right: var(--space-mobile);
   }
 }
 
@@ -152,6 +134,7 @@
   }
 }
 
+
 /* ============================================
    Section: Trayectoria
    ============================================ */
@@ -161,6 +144,14 @@
   position: relative;
   padding-top: var(--space-gap);
   padding-bottom: var(--space-gap);
+}
+
+.trayectoria-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 48px;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .trayectoria .timeline-line {
@@ -183,11 +174,15 @@
   color: var(--light-text-secondary);
 }
 
+.trayectoria-photo-col {
+  min-width: 0;
+}
+
 .trayectoria-photo {
   position: sticky;
   top: 80px;
   width: 100%;
-  height: 600px;
+  height: 560px;
   overflow: hidden;
   border: 1px solid var(--outline-variant);
 }
@@ -199,17 +194,23 @@
   filter: grayscale(1);
 }
 
+@media (max-width: 1100px) {
+  .trayectoria-inner {
+    grid-template-columns: 1fr;
+  }
+  .trayectoria-photo-col {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .trayectoria-photo {
-    position: relative;
-    top: 0;
-    height: 300px;
-    margin-top: 40px;
+  .trayectoria-inner {
+    gap: 24px;
   }
 }
 
 /* ============================================
-   Section: Liderazgo
+   Section: Emprendimiento (was Liderazgo)
    ============================================ */
 .liderazgo {
   background: var(--surface);
@@ -291,31 +292,31 @@
 }
 
 .edu-timeline {
-  display: flex;
-  gap: var(--space-card);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
 }
 
 .edu-item {
-  flex: 1;
-  min-width: 0;
-  padding: var(--space-card) 0;
+  padding: 24px 0;
+  border-top: 2px solid var(--light-border);
 }
 
 .edu-year {
   font-family: var(--font-label);
-  font-size: var(--text-label-xl);
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1;
   color: var(--light-text-primary);
   margin-bottom: 8px;
-  opacity: 0.15;
+  opacity: 0.2;
 }
 
 .edu-degree {
   font-family: var(--font-display);
-  font-size: 1rem;
-  line-height: 1.3;
-  margin-bottom: 4px;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  margin-bottom: 6px;
 }
 
 .edu-school {
@@ -325,19 +326,104 @@
   font-style: italic;
 }
 
+@media (max-width: 1024px) {
+  .edu-timeline {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .edu-timeline {
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
   }
   .edu-year {
-    font-size: 4rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-timeline {
+    grid-template-columns: 1fr;
   }
 }
 
 /* ============================================
-   Section: Publicaciones y Media
+   Section: Profesor
+   ============================================ */
+.profesor {
+  background: var(--surface-container-low);
+  color: var(--on-surface);
+  padding-top: var(--space-gap);
+  padding-bottom: var(--space-gap);
+  position: relative;
+  overflow: hidden;
+}
+
+.profesor-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  z-index: 0;
+}
+
+.profesor-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.4);
+}
+
+.profesor .card {
+  background: var(--surface-container);
+  border-color: var(--outline-variant);
+}
+
+.profesor .card-title {
+  color: var(--accent-gold);
+}
+
+.profesor .card-body {
+  color: var(--on-surface-variant);
+}
+
+.course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.course-tag {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border: 1px solid var(--outline-variant);
+  color: var(--on-surface-variant);
+  transition: border-color var(--duration-fast) ease,
+              color var(--duration-fast) ease;
+}
+
+.course-tag:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* ============================================
+   Section: Publicaciones (académicas)
    ============================================ */
 .publicaciones {
+  background: var(--surface-container-lowest);
+  color: var(--on-surface);
+  padding-top: var(--space-gap);
+  padding-bottom: var(--space-gap);
+}
+
+/* ============================================
+   Section: Prensa
+   ============================================ */
+.prensa {
   background: var(--surface-container-low);
   color: var(--on-surface);
   padding-top: var(--space-gap);
@@ -371,7 +457,18 @@
   text-transform: uppercase;
   letter-spacing: var(--tracking-label);
   color: var(--accent-gold);
-  min-width: 120px;
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   Section: Certificaciones
+   ============================================ */
+.certificaciones {
+  background: var(--surface-container);
+  color: var(--on-surface);
+  padding-top: var(--space-gap);
+  padding-bottom: var(--space-gap);
 }
 
 /* ============================================
@@ -390,8 +487,28 @@
 .hobbies {
   background: var(--surface-container-lowest);
   color: var(--on-surface);
-  padding-top: var(--space-gap);
-  padding-bottom: var(--space-gap);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.hobby-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .hobby-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hobby-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ============================================
@@ -411,4 +528,80 @@
    ============================================ */
 .footer-section {
   background: var(--surface-container-lowest);
+}
+
+.footer {
+  position: relative;
+  padding: 48px var(--space-desktop);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-top: 1px solid var(--outline-variant);
+  overflow: hidden;
+  gap: 12px;
+}
+
+.footer-copy {
+  font-family: var(--font-body);
+  font-size: var(--text-metadata);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--on-surface-variant);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-icon-link {
+  color: var(--on-surface-variant);
+  transition: color var(--duration-fast) ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon-link:hover {
+  color: var(--accent-gold);
+}
+
+.footer-credit {
+  font-family: var(--font-body);
+  font-size: var(--text-metadata);
+  color: var(--on-surface-variant);
+  opacity: 0.4;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-left: var(--space-mobile);
+    padding-right: var(--space-mobile);
+    align-items: center;
+  }
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--accent-gold);
+  color: var(--on-primary);
+  font-family: var(--font-label);
+  font-size: var(--text-label-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  transition: top 200ms ease;
+}
+
+.skip-link:focus {
+  top: 8px;
 }

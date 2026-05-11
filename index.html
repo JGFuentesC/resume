@@ -3,19 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>José G. Fuentes, PhD — Lead AI · CTO · Research Scientist</title>
-  <meta name="description" content="Lead AI specialist con más de 17 años de experiencia liderando proyectos de inteligencia artificial. CTO en Insaite, CRO/CDO en Plurall, Profesor en UNAM y Anáhuac. PhD en Ciencias de la Ingeniería.">
-  <meta property="og:title" content="José G. Fuentes, PhD">
-  <meta property="og:description" content="Lead AI · CTO · PhD. Rigor matemático aplicado a la disrupción tecnológica.">
+  <title>Dr. Jose Gustavo Fuentes — AI Executive · Entrepreneur · Professor</title>
+  <meta name="description" content="Dr. Jose Gustavo Fuentes — AI Executive, Entrepreneur y Profesor. Más de 17 años liderando inteligencia artificial. CTO Insaite, Co-founder Plurall, Founder Augmented Humans. PhD en Ciencias de la Ingeniería.">
+  <meta property="og:title" content="Dr. Jose Gustavo Fuentes">
+  <meta property="og:description" content="AI Executive · Entrepreneur · Professor">
   <meta property="og:image" content="assets/photos/genai/photo1.webp">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="José G. Fuentes, PhD">
-  <meta name="twitter:description" content="Lead AI · CTO · PhD">
-  <meta name="twitter:image" content="assets/photos/genai/photo1.webp">
-
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>■</text></svg>" type="image/svg+xml">
-
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/typography.css">
@@ -25,27 +20,27 @@
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/utilities.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "José G. Fuentes",
+    "name": "Jose Gustavo Fuentes",
+    "honorificPrefix": "Dr.",
     "honorificSuffix": "PhD",
-    "jobTitle": "Lead AI Specialist · CTO",
+    "jobTitle": "AI Executive · Entrepreneur · Professor",
+    "url": "https://josegustavofuentes.com.mx",
     "alumniOf": [
-      { "name": "Universidad Iberoamericana", "degree": "PhD Engineering Science" },
-      { "name": "Universidad Anáhuac", "degree": "MSc Analytics" },
-      { "name": "Universidad Nacional Autónoma de México", "degree": "BSc Applied Mathematics and Computer Science" },
-      { "name": "Massachusetts Institute of Technology", "description": "Advanced Machine Learning" }
+      { "name": "Universidad Iberoamericana", "degree": "PhD Ciencias de la Ingeniería" },
+      { "name": "Universidad Anáhuac", "degree": "MSc Inteligencia Analítica" },
+      { "name": "UNAM", "degree": "BSc Matemáticas Aplicadas y Computación" },
+      { "name": "MIT", "description": "Advanced Machine Learning" }
     ],
     "worksFor": [
-      { "name": "Insaite" },
-      { "name": "Plurall" }
+      { "name": "Insaite", "url": "https://insaite.io" },
+      { "name": "Plurall", "url": "https://plurall.com" },
+      { "name": "Augmented Humans", "url": "https://augmentedhumans.net" }
     ],
-    "sameAs": [
-      "https://www.linkedin.com/in/josegustavofuentescabrera/"
-    ]
+    "sameAs": ["https://www.linkedin.com/in/josegustavofuentescabrera/"]
   }
   </script>
 </head>
@@ -56,354 +51,385 @@
 <div class="scroll-progress" aria-hidden="true">
   <div class="scroll-progress-bar"></div>
 </div>
-
 <div class="custom-cursor" aria-hidden="true"></div>
 
-<!-- ============================================================
-     NAVBAR
-     ============================================================ -->
+<!-- NAV -->
 <nav class="nav" role="navigation" aria-label="Navegación principal">
-  <a href="#hero" class="nav-logo">Fuentes.PhD</a>
   <div class="nav-links">
-    <a href="#profile" class="nav-link">Sobre Mí</a>
-    <a href="#trajectory" class="nav-link">Trayectoria</a>
-    <a href="#leadership" class="nav-link">Liderazgo</a>
-    <a href="#education" class="nav-link">Formación</a>
-    <a href="#archive" class="nav-link">Archivo</a>
+    <a href="#profile"        class="nav-link" data-i18n="nav.about">Sobre Mí</a>
+    <a href="#trajectory"     class="nav-link" data-i18n="nav.career">Trayectoria</a>
+    <a href="#entrepreneurship" class="nav-link" data-i18n="nav.ventures">Emprendimiento</a>
+    <a href="#education"      class="nav-link" data-i18n="nav.education">Formación</a>
+    <a href="#professor"      class="nav-link" data-i18n="nav.professor">Profesor</a>
+    <a href="#publications"   class="nav-link" data-i18n="nav.archive">Archivo</a>
   </div>
-  <a href="#connect" class="nav-connect">Contacto</a>
+  <div class="nav-right">
+    <div class="lang-switcher" aria-label="Idioma">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="ja">日本語</button>
+    </div>
+    <a href="#site-footer" class="nav-connect" data-i18n="nav.contact">Contacto</a>
+  </div>
 </nav>
 
 <main id="main-content">
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
+<!-- HERO -->
 <section id="hero" class="hero">
   <div class="hero-photo photo-overlay gold-edge">
-    <img src="assets/photos/genai/photo1.webp" alt="La Escala del Pensador — Figura solitaria ante arquitectura brutalista monumental. Luz cenital dramática. Blanco y negro de alto contraste.">
+    <img src="assets/photos/genai/photo1.webp" alt="Dr. Jose Gustavo Fuentes">
     <div class="noise-overlay"></div>
   </div>
   <div class="hero-content">
-    <h1 class="hero-name fade-in-load">José G. Fuentes</h1>
-    <p class="hero-tagline fade-in-load fade-in-load-delay-2">Lead AI · CTO · PhD</p>
+    <h1 class="hero-name fade-in-load">Dr. Jose Gustavo Fuentes</h1>
+    <p class="hero-tagline fade-in-load fade-in-load-delay-2" data-i18n="hero.tagline">AI Executive | Entrepreneur | Professor</p>
     <div class="section-divider fade-in-load fade-in-load-delay-3"></div>
   </div>
 </section>
 
-<!-- ============================================================
-     SOBRE MÍ
-     ============================================================ -->
+<!-- SOBRE MÍ -->
 <section id="profile" class="sobre-mi" aria-labelledby="sobre-mi-heading">
   <div class="sobre-mi-text reveal">
-    <h2 id="sobre-mi-heading" class="display-lg text-accent uppercase mb-32">Sobre Mí</h2>
-    <p class="body-reading text-secondary">
-      Licenciado en Matemáticas Aplicadas y Computación por la Universidad Nacional Autónoma de México,
-      Maestro en Inteligencia Analítica con especialidad en Minería de Datos por la Universidad Anáhuac,
-      y Doctor en Ciencias de la Ingeniería por la Universidad Iberoamericana, donde realizó una estancia de
-      investigación en la Universidad de Chile. Posee estudios avanzados en inteligencia artificial en el
-      Massachusetts Institute of Technology (MIT) y es Professional Machine Learning Engineer certificado por Google.
+    <h2 id="sobre-mi-heading" class="display-lg text-accent uppercase mb-32" data-i18n="about.heading">Sobre Mí</h2>
+    <p id="about-p1" class="body-reading text-secondary" data-i18n="about.p1">
+      Licenciado en Matemáticas Aplicadas y Computación por la UNAM, Maestro en Inteligencia Analítica con
+      especialidad en Minería de Datos por la Universidad Anáhuac, y Doctor en Ciencias de la Ingeniería
+      por la Universidad Iberoamericana con estancia de investigación en la Universidad de Chile.
+      Estudios avanzados en IA en el MIT y Professional Machine Learning Engineer certificado por Google.
     </p>
-    <p class="body-reading text-secondary">
-      Con más de 17 años de experiencia profesional, ha resuelto problemas complejos a través de soluciones
-      analíticas y de inteligencia artificial en sectores como finanzas, manufactura, comercio minorista,
-      salud y gobierno. Su capacidad para transformar datos en valor de negocio ha sido fundamental en
-      proyectos críticos para diversas organizaciones. Ha trabajado en Silicon Valley, aportando su
-      experiencia en ciencia de datos y tecnología de punta.
+    <p id="about-p2" class="body-reading text-secondary" data-i18n="about.p2">
+      Con más de 17 años de experiencia, ha resuelto problemas complejos a través de soluciones de IA y
+      analítica en finanzas, manufactura, comercio, salud y gobierno. Ha trabajado en Silicon Valley.
     </p>
-    <p class="body-reading text-secondary">
-      Es cofundador de Insaite, una empresa de inteligencia artificial aplicada que crea ventajas
-      competitivas para potenciar la rentabilidad de los negocios, y de Plurall, plataforma colombiana
-      de inclusión financiera donde lidera la gestión de riesgos y estrategias de datos para otorgar
-      créditos a micro-pymes. Recientemente fundó Augmented Humans, una plataforma de educación en IA
+    <p id="about-p3" class="body-reading text-secondary" data-i18n="about.p3">
+      Cofundador de Insaite (IA aplicada) y de Plurall (plataforma de inclusión financiera para más de 6.5
+      millones de microempresarios en Colombia). Fundador de Augmented Humans, plataforma educativa de IA
       enfocada en la simbiosis humano-máquina.
     </p>
-    <p class="body-reading text-secondary">
-      Ha sido destacado en medios impresos, radio y televisión — Forbes, El Financiero, El Economista —
-      por su profundo conocimiento y contribuciones en inteligencia artificial y ciencia de datos.
+    <p id="about-p4" class="body-reading text-secondary" data-i18n="about.p4">
+      Destacado en Forbes, El Financiero y El Economista por sus contribuciones en inteligencia artificial
+      y ciencia de datos.
     </p>
   </div>
   <div class="sobre-mi-photo photo-overlay gold-edge">
-    <img src="assets/photos/genai/photo3.webp" alt="El Rigor Reflexivo — Figura sentada en bloque minimalista de concreto. Pared de concreto pulido. Luz lateral que revela textura." loading="lazy">
+    <img src="assets/photos/genai/photo3.webp" alt="El Rigor Reflexivo" loading="lazy">
     <div class="noise-overlay"></div>
   </div>
 </section>
 
-<!-- ============================================================
-     TRAYECTORIA
-     ============================================================ -->
+<!-- TRAYECTORIA -->
 <section id="trajectory" class="trayectoria" aria-labelledby="trajectory-heading">
-  <div class="grid-12">
-    <div class="col-span-3">
-      <h2 id="trajectory-heading" class="display-lg uppercase mb-24 reveal">Trayectoria</h2>
-    </div>
-    <div class="col-span-5 reveal-stagger">
+  <div class="content-pad">
+    <h2 id="trajectory-heading" class="display-lg uppercase mb-24 reveal" data-i18n="career.heading">Trayectoria</h2>
+  </div>
+  <div class="trayectoria-inner content-pad">
+    <div class="trayectoria-timeline reveal-stagger">
       <div class="timeline">
         <div class="timeline-line"></div>
 
         <div class="timeline-entry">
           <div class="timeline-dot"></div>
-          <p class="timeline-date">Ago 2018 — Presente</p>
-          <h3 class="timeline-title">CTO & Co-founder</h3>
-          <p class="timeline-body"><strong>Insaite</strong> — Soluciones de IA cognitiva para manufactura, finanzas y retail. Liderazgo técnico y estratégico de la compañía.</p>
+          <p class="timeline-date" data-i18n="job1.date">Ago 2018 — Presente</p>
+          <h3 class="timeline-title" data-i18n="job1.title">CTO & Co-founder</h3>
+          <p class="timeline-body"><strong>Insaite</strong> — <span data-i18n="job1.body">Soluciones de IA cognitiva para manufactura, finanzas y retail. Liderazgo técnico y estratégico.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot"></div>
-          <p class="timeline-date">Oct 2022 — Presente</p>
-          <h3 class="timeline-title">CRO / Chief AI Officer & Co-founder</h3>
-          <p class="timeline-body"><strong>Plurall</strong> — Primera Fin-App colombiana impulsada por IA. Acceso a capital de trabajo y banca móvil para más de 6.5 millones de microempresarios. Respaldada por Fasanara, Visa y Dale.</p>
+          <p class="timeline-date" data-i18n="job2.date">Oct 2022 — Presente</p>
+          <h3 class="timeline-title" data-i18n="job2.title">CRO / Chief AI Officer & Co-founder</h3>
+          <p class="timeline-body"><strong>Plurall</strong> — <span data-i18n="job2.body">Primera Fin-App colombiana impulsada por IA. Acceso a capital de trabajo para más de 6.5M microempresarios. Respaldada por Fasanara, Visa y Dale.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot"></div>
-          <p class="timeline-date">2024 — Presente</p>
-          <h3 class="timeline-title">Founder</h3>
-          <p class="timeline-body"><strong>Augmented Humans</strong> — Plataforma de educación en IA enfocada en la simbiosis humano-máquina para potenciar el intelecto y la creatividad.</p>
+          <p class="timeline-date" data-i18n="job3.date">2024 — Presente</p>
+          <h3 class="timeline-title" data-i18n="job3.title">Founder</h3>
+          <p class="timeline-body"><strong>Augmented Humans</strong> — <span data-i18n="job3.body">Plataforma de educación en IA enfocada en la simbiosis humano-máquina.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot"></div>
-          <p class="timeline-date">Jul 2024 — Presente</p>
-          <h3 class="timeline-title">Profesor de Posgrado</h3>
-          <p class="timeline-body"><strong>Universidad Anáhuac</strong> — Business Intelligence para la Maestría en Analítica y Tecnologías de Información.</p>
-        </div>
-
-        <div class="timeline-entry">
-          <div class="timeline-dot"></div>
-          <p class="timeline-date">Ago 2012 — Presente</p>
-          <h3 class="timeline-title">Profesor de Licenciatura</h3>
-          <p class="timeline-body"><strong>FES Acatlán, UNAM</strong> — Análisis Multivariado, Ecuaciones Diferenciales, Programación, Bases de Datos, Análisis Numérico, Estadística, Cálculo, Temas Avanzados de Computación.</p>
+          <p class="timeline-date" data-i18n="job4.date">Jul 2024 — Presente</p>
+          <h3 class="timeline-title" data-i18n="job4.title">Profesor de Posgrado</h3>
+          <p class="timeline-body"><strong>Universidad Anáhuac</strong> — <span data-i18n="job4.body">Business Intelligence para la Maestría en Analítica y Tecnologías de Información.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot dim"></div>
-          <p class="timeline-date dim">Ago 2021 — Ago 2022</p>
-          <h3 class="timeline-title">Sr. Data Scientist</h3>
-          <p class="timeline-body"><strong>Turing Inc.</strong> — Lideró el equipo de data science para desarrollar soluciones analíticas de matching de talento global de ingeniería de software. Experiencia en Silicon Valley.</p>
+          <p class="timeline-date dim" data-i18n="job5.date">Ago 2012 — Ago 2025</p>
+          <h3 class="timeline-title" data-i18n="job5.title">Profesor de Licenciatura</h3>
+          <p class="timeline-body"><strong>FES Acatlán, UNAM</strong> — <span data-i18n="job5.body">Análisis Multivariado, Ecuaciones Diferenciales, Programación, Bases de Datos, Análisis Numérico, Estadística, Cálculo, Temas Avanzados de Computación, Minería de Datos, Simulación Estocástica.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot dim"></div>
-          <p class="timeline-date dim">Dic 2012 — Jun 2016</p>
-          <h3 class="timeline-title">Subdirector de Analítica de Tarjetas de Crédito</h3>
-          <p class="timeline-body"><strong>Banorte</strong> — Balance analítico entre equipos de riesgo y producto. Modelado predictivo de attrition, propensión de consumo y riesgo crediticio. Segmentación avanzada.</p>
+          <p class="timeline-date dim" data-i18n="job6.date">Ago 2021 — Ago 2022</p>
+          <h3 class="timeline-title" data-i18n="job6.title">Sr. Data Scientist</h3>
+          <p class="timeline-body"><strong>Turing Inc.</strong> — <span data-i18n="job6.body">Lideró el equipo de data science para soluciones de matching de talento global. Experiencia en Silicon Valley.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot dim"></div>
-          <p class="timeline-date dim">Feb 2010 — Dic 2012</p>
-          <h3 class="timeline-title">Consultor en Minería de Datos</h3>
-          <p class="timeline-body"><strong>BBVA</strong> — Consultoría analítica y tecnológica para cobranza de banca minorista.</p>
+          <p class="timeline-date dim" data-i18n="job7.date">Dic 2012 — Jun 2016</p>
+          <h3 class="timeline-title" data-i18n="job7.title">Subdirector de Analítica de Tarjetas de Crédito</h3>
+          <p class="timeline-body"><strong>Banorte</strong> — <span data-i18n="job7.body">Modelado predictivo de attrition, propensión de consumo y riesgo crediticio. Segmentación avanzada.</span></p>
         </div>
 
         <div class="timeline-entry">
           <div class="timeline-dot dim"></div>
-          <p class="timeline-date dim">Feb 2009 — Feb 2010</p>
-          <h3 class="timeline-title">Analista de Modelos de Soporte a Decisiones</h3>
-          <p class="timeline-body"><strong>Santander</strong> — Soporte analítico, reporting y análisis de bases de datos.</p>
+          <p class="timeline-date dim" data-i18n="job8.date">Feb 2010 — Dic 2012</p>
+          <h3 class="timeline-title" data-i18n="job8.title">Consultor en Minería de Datos</h3>
+          <p class="timeline-body"><strong>BBVA</strong> — <span data-i18n="job8.body">Consultoría analítica y tecnológica para cobranza de banca minorista.</span></p>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-dot dim"></div>
+          <p class="timeline-date dim" data-i18n="job9.date">Feb 2009 — Feb 2010</p>
+          <h3 class="timeline-title" data-i18n="job9.title">Analista de Modelos de Soporte a Decisiones</h3>
+          <p class="timeline-body"><strong>Santander</strong> — <span data-i18n="job9.body">Soporte analítico, reporting y análisis de bases de datos.</span></p>
         </div>
       </div>
     </div>
-    <div class="col-span-4 reveal">
+    <div class="trayectoria-photo-col reveal">
       <div class="trayectoria-photo photo-overlay">
-        <img src="assets/photos/genai/photo1.webp" alt="La Escala del Pensador — Figura solitaria ante arquitectura brutalista monumental. Luz cenital dramática." loading="lazy">
+        <img src="assets/photos/genai/photo4.webp" alt="" loading="lazy" onerror="this.src='assets/photos/genai/photo1.webp'">
         <div class="noise-overlay"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     LIDERAZGO
-     ============================================================ -->
-<section id="leadership" class="liderazgo" aria-labelledby="leadership-heading">
+<!-- EMPRENDIMIENTO -->
+<section id="entrepreneurship" class="liderazgo" aria-labelledby="entrepreneurship-heading">
   <div class="liderazgo-overlay gradient-mask-h">
     <img src="assets/photos/face/face-1.webp" alt="" loading="lazy">
     <div class="noise-overlay"></div>
   </div>
   <div class="liderazgo-content content-pad">
-    <h2 id="leadership-heading" class="display-lg text-accent uppercase mb-24 reveal">Liderazgo</h2>
-    <div class="grid-3 reveal-stagger max-w-2xl mx-auto" style="max-width: var(--max-width);">
-      <div class="card">
-        <h3 class="card-title">CTO · Insaite</h3>
-        <p class="card-subtitle text-accent">desde 2018</p>
-        <p class="card-body">Inteligencia artificial aplicada para optimizar procesos de negocio. Soluciones cognitivas de machine learning y data science que reducen costos y mejoran el rendimiento en manufactura, finanzas y retail.</p>
-        <a href="https://insaite.io" class="link-underline mt-8" rel="noopener" target="_blank">insaite.io</a>
-      </div>
-      <div class="card">
-        <h3 class="card-title">CRO/CDO · Plurall</h3>
-        <p class="card-subtitle text-accent">desde 2022</p>
-        <p class="card-body">Inclusión financiera impulsada por IA para más de 6.5 millones de microempresarios en Colombia. Gestión de riesgos, estrategias de datos y expansión de Embedded Finance en Latinoamérica.</p>
-        <a href="https://plurall.com" class="link-underline mt-8" rel="noopener" target="_blank">plurall.com</a>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Founder · Augmented Humans</h3>
-        <p class="card-subtitle text-accent">desde 2024</p>
-        <p class="card-body">Plataforma educativa en inteligencia artificial. Simbiosis humano-máquina para potenciar el intelecto y la creatividad. Formación de la próxima generación de profesionales en IA.</p>
-      </div>
+    <h2 id="entrepreneurship-heading" class="display-lg text-accent uppercase mb-24 reveal" data-i18n="ventures.heading">Emprendimiento</h2>
+    <div class="grid-3 reveal-stagger" style="max-width: var(--max-width);">
+      <a href="https://insaite.io" class="card card-link" rel="noopener" target="_blank">
+        <h3 class="card-title" data-i18n="vent1.title">CTO · Insaite</h3>
+        <p class="card-subtitle text-accent" data-i18n="vent1.since">desde 2018</p>
+        <p class="card-body" data-i18n="vent1.body">Inteligencia artificial aplicada para optimizar procesos de negocio. Soluciones cognitivas de ML y data science en manufactura, finanzas y retail.</p>
+        <span class="link-underline mt-8">insaite.io ↗</span>
+      </a>
+      <a href="https://plurall.com" class="card card-link" rel="noopener" target="_blank">
+        <h3 class="card-title" data-i18n="vent2.title">CRO/CDO · Plurall</h3>
+        <p class="card-subtitle text-accent" data-i18n="vent2.since">desde 2022</p>
+        <p class="card-body" data-i18n="vent2.body">Inclusión financiera impulsada por IA para más de 6.5 millones de microempresarios en Colombia. Gestión de riesgos y Embedded Finance en Latinoamérica.</p>
+        <span class="link-underline mt-8">plurall.com ↗</span>
+      </a>
+      <a href="https://augmentedhumans.net" class="card card-link" rel="noopener" target="_blank">
+        <h3 class="card-title" data-i18n="vent3.title">Founder · Augmented Humans</h3>
+        <p class="card-subtitle text-accent" data-i18n="vent3.since">desde 2024</p>
+        <p class="card-body" data-i18n="vent3.body">Plataforma educativa en IA. Simbiosis humano-máquina para potenciar el intelecto y la creatividad. Formación de la próxima generación de profesionales en IA.</p>
+        <span class="link-underline mt-8">augmentedhumans.net ↗</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     EDUCACIÓN
-     ============================================================ -->
+<!-- EDUCACIÓN -->
 <section id="education" class="educacion" aria-labelledby="education-heading">
   <div class="educacion-overlay gradient-mask-h">
-    <img src="assets/photos/face/face-1.webp" alt="" loading="lazy">
+    <img src="assets/photos/genai/photo6.webp" alt="" loading="lazy" onerror="this.src='assets/photos/face/face-1.webp'">
     <div class="noise-overlay"></div>
   </div>
   <div class="educacion-content content-pad">
-    <h2 id="education-heading" class="display-lg uppercase mb-32 reveal">Formación</h2>
+    <h2 id="education-heading" class="display-lg uppercase mb-32 reveal" data-i18n="education.heading">Formación</h2>
     <div class="edu-timeline reveal-stagger">
       <div class="edu-item">
-        <p class="edu-year">2024</p>
-        <p class="edu-degree">PhD en Ciencias de la Ingeniería</p>
-        <p class="edu-school">U. Iberoamericana + U. de Chile</p>
-      </div>
-      <div class="edu-item">
-        <p class="edu-year">2015</p>
-        <p class="edu-degree">MSc en Inteligencia Analítica</p>
-        <p class="edu-school">U. Anáhuac</p>
-      </div>
-      <div class="edu-item">
-        <p class="edu-year">2015</p>
-        <p class="edu-degree">Especialidad en Minería de Datos</p>
-        <p class="edu-school">U. Anáhuac</p>
-      </div>
-      <div class="edu-item">
         <p class="edu-year">2009</p>
-        <p class="edu-degree">BSc Matemáticas Aplicadas y Computación</p>
-        <p class="edu-school">UNAM</p>
+        <p class="edu-degree" data-i18n="edu4.degree">BSc Matemáticas Aplicadas y Computación</p>
+        <p class="edu-school" data-i18n="edu4.school">UNAM</p>
       </div>
       <div class="edu-item">
-        <p class="edu-year">MIT</p>
-        <p class="edu-degree">Advanced ML for Big Data & Text Processing</p>
-        <p class="edu-school">Massachusetts Institute of Technology</p>
+        <p class="edu-year">2015</p>
+        <p class="edu-degree" data-i18n="edu2.degree">MSc en Inteligencia Analítica</p>
+        <p class="edu-school" data-i18n="edu2.school">U. Anáhuac</p>
+      </div>
+      <div class="edu-item">
+        <p class="edu-year">2015</p>
+        <p class="edu-degree" data-i18n="edu3.degree">Especialidad en Minería de Datos</p>
+        <p class="edu-school" data-i18n="edu3.school">U. Anáhuac</p>
+      </div>
+      <div class="edu-item">
+        <p class="edu-year">2019</p>
+        <p class="edu-degree" data-i18n="edu5.degree">Advanced ML for Big Data &amp; Text Processing</p>
+        <p class="edu-school" data-i18n="edu5.school">Massachusetts Institute of Technology</p>
+      </div>
+      <div class="edu-item">
+        <p class="edu-year">2024</p>
+        <p class="edu-degree" data-i18n="edu1.degree">PhD en Ciencias de la Ingeniería</p>
+        <p class="edu-school" data-i18n="edu1.school">U. Iberoamericana + U. de Chile</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     PUBLICACIONES Y MEDIA
-     ============================================================ -->
-<section id="archive" class="publicaciones" aria-labelledby="archive-heading">
+<!-- PROFESOR -->
+<section id="professor" class="profesor" aria-labelledby="professor-heading">
+  <div class="profesor-overlay gradient-mask-h">
+    <img src="assets/photos/genai/photo5.webp" alt="" loading="lazy">
+    <div class="noise-overlay"></div>
+  </div>
+  <div class="content-pad" style="position:relative;z-index:1;">
+    <h2 id="professor-heading" class="display-lg text-accent uppercase mb-32 reveal" data-i18n="prof.heading">Profesor</h2>
+    <div class="grid-2 reveal-stagger">
+
+      <div class="card">
+        <h3 class="card-title" data-i18n="prof.unam.title">UNAM · FES Acatlán</h3>
+        <p class="card-subtitle text-accent" data-i18n="prof.unam.since">Ago 2012 — Ago 2025</p>
+        <p class="card-body mb-16" data-i18n="prof.unam.body">Catedrático para las Licenciaturas en Actuaría, Matemáticas Aplicadas y Computación, y Ciencia de Datos.</p>
+        <div class="course-tags">
+          <span class="course-tag">Análisis Multivariado</span>
+          <span class="course-tag">Ecuaciones Diferenciales</span>
+          <span class="course-tag">Algoritmos y Programación</span>
+          <span class="course-tag">Bases de Datos</span>
+          <span class="course-tag">Análisis Numérico</span>
+          <span class="course-tag">Estadística II</span>
+          <span class="course-tag">Cálculo I</span>
+          <span class="course-tag">Cálculo III</span>
+          <span class="course-tag">Temas Selectos de Computación</span>
+          <span class="course-tag">Minería de Datos</span>
+          <span class="course-tag">Simulación Estocástica</span>
+          <span class="course-tag">Computación Estadística</span>
+          <span class="course-tag">Paradigmas y Programación para Ciencia de Datos</span>
+          <span class="course-tag">Probabilidad Aplicada</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title" data-i18n="prof.anahuac.title">Universidad Anáhuac · CADIT</h3>
+        <p class="card-subtitle text-accent" data-i18n="prof.anahuac.since">Jul 2024 — Presente</p>
+        <p class="card-body mb-16" data-i18n="prof.anahuac.body">Profesor de Posgrado — Business Intelligence para la Maestría en Analítica y Tecnologías de Información.</p>
+        <a href="https://cadit.anahuac.mx/n/claustro/dr-jose-gustavo-fuentes" class="link-underline" rel="noopener" target="_blank" data-i18n="prof.anahuac.link">Perfil en CADIT ↗</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICACIONES -->
+<section id="publications" class="publicaciones" aria-labelledby="publications-heading">
   <div class="content-pad">
-    <div class="grid-2">
-      <div class="reveal">
-        <h2 id="archive-heading" class="display-lg text-accent uppercase mb-24">Publicaciones</h2>
-        <div class="pub-list">
-          <div class="pub-item">
-            <a href="https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0289130" class="pub-title" rel="noopener" target="_blank">Combination of unsupervised discretization methods for credit risk</a>
-            <p class="pub-journal"><span class="pub-year">2023</span> · PLOS ONE</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.mdpi.com/2076-2607/11/7/1728" class="pub-title" rel="noopener" target="_blank">The role of carbohydrate intake on the gut microbiome</a>
-            <p class="pub-journal"><span class="pub-year">2023</span> · Microorganisms, MDPI</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://revistafiguras.acatlan.unam.mx/index.php/figuras/article/view/249" class="pub-title" rel="noopener" target="_blank">El espejo digital</a>
-            <p class="pub-journal"><span class="pub-year">2022</span> · Figuras, UNAM</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.forbes.com.mx/conoce-mejor-a-tus-clientes-con-inteligencia-artificial/" class="pub-title" rel="noopener" target="_blank">Conoce mejor a tus clientes con Inteligencia Artificial</a>
-            <p class="pub-journal"><span class="pub-year">2019</span> · Forbes México</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.forbes.com.mx/estos-son-los-profesionistas-por-los-que-pelean-las-empresas/" class="pub-title" rel="noopener" target="_blank">Estos son los profesionistas por los que pelean las empresas</a>
-            <p class="pub-journal"><span class="pub-year">2019</span> · Forbes México</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://forbescentroamerica.com/2020/01/24/la-inteligencia-artificial-en-el-wef/" class="pub-title" rel="noopener" target="_blank">La Inteligencia Artificial en el WEF</a>
-            <p class="pub-journal"><span class="pub-year">2019</span> · Forbes Centroamérica</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.forbes.com.mx/como-integrar-una-herramienta-predictiva-en-tu-negocio/" class="pub-title" rel="noopener" target="_blank">¿Cómo integrar una herramienta predictiva en tu negocio?</a>
-            <p class="pub-journal"><span class="pub-year">2019</span> · Forbes México</p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.forbes.com.mx/por-que-no-debes-confundir-big-data-business-intelligence-e-inteligencia-artificial/" class="pub-title" rel="noopener" target="_blank">¿Por qué no debes confundir Big Data, BI e IA?</a>
-            <p class="pub-journal"><span class="pub-year">2019</span> · Forbes México</p>
-          </div>
-          <div class="pub-item">
-            <a href="http://link.springer.com/chapter/10.1007/978-3-319-27101-9_42" class="pub-title" rel="noopener" target="_blank">Credit Scoring Model for Payroll Issuers: A Real Case</a>
-            <p class="pub-journal"><span class="pub-year">2015</span> · Springer</p>
-          </div>
-        </div>
+    <h2 id="publications-heading" class="display-lg text-accent uppercase mb-24 reveal" data-i18n="pub.heading">Publicaciones</h2>
+    <div class="pub-list reveal-stagger">
+      <div class="pub-item">
+        <a href="https://journals.plos.org/plosone/article/authors?id=10.1371/journal.pone.0289130" class="pub-title" rel="noopener" target="_blank">Combination of unsupervised discretization methods for credit risk</a>
+        <p class="pub-journal"><span class="pub-year">2023</span> · PLOS ONE</p>
       </div>
-      <div class="reveal">
-        <h2 class="display-lg text-accent uppercase mb-24">Prensa</h2>
-        <div>
-          <a href="https://forbes.com.mx/inteligencia-artificial-debe-ser-un-complemento-mas-que-un-sustituto-insaite/" class="media-link" rel="noopener" target="_blank">
-            <span class="media-outlet">Forbes</span>
-            <span>La IA debe ser un complemento más que un sustituto</span>
-          </a>
-          <a href="https://www.elfinanciero.com.mx/tv/entre-mercados/conoce-a-la-empresa-mexicana-que-genera-apps-de-ia/" class="media-link" rel="noopener" target="_blank">
-            <span class="media-outlet">El Financiero</span>
-            <span>Conoce a la empresa mexicana que genera apps de IA</span>
-          </a>
-          <a href="https://forbescentroamerica.com/2020/01/24/la-inteligencia-artificial-en-el-wef/" class="media-link" rel="noopener" target="_blank">
-            <span class="media-outlet">Forbes</span>
-            <span>Inteligencia Artificial en el WEF</span>
-          </a>
-          <a href="https://www.eleconomista.com.mx/revistaimef/Inteligencia-artificial-en-finanzas-un-aliado-en-la-transformacion-20210304-0028.html" class="media-link" rel="noopener" target="_blank">
-            <span class="media-outlet">El Economista</span>
-            <span>IA en finanzas: un aliado en la transformación</span>
-          </a>
-          <a href="https://www.youtube.com/watch?v=E5HvZiZ9Ka8" class="media-link" rel="noopener" target="_blank">
-            <span class="media-outlet">YouTube</span>
-            <span>Entrevista — IA e innovación</span>
-          </a>
-          <a href="https://www.instagram.com/reel/DJKyYGoSmt3/" class="media-link" rel="noopener" target="_blank">
-            <span class="media-outlet">Instagram</span>
-            <span>Reel — Ciencia de datos en acción</span>
-          </a>
-        </div>
-
-        <h2 class="display-lg text-accent uppercase mb-24 mt-16">Certificaciones</h2>
-        <div>
-          <div class="pub-item">
-            <a href="https://www.credly.com/badges/5e6e473d-fd3b-4dc4-9575-8af76f54f04b/linked_in_profile" class="pub-title" rel="noopener" target="_blank">Professional Machine Learning Engineer</a>
-            <p class="pub-journal"><span class="pub-year">Google</span></p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.credly.com/badges/81fab727-1749-47f3-905e-9b414dacc6a6/public_url" class="pub-title" rel="noopener" target="_blank">Build and Deploy a GenAI Solution Using RAG</a>
-            <p class="pub-journal"><span class="pub-year">Google</span></p>
-          </div>
-          <div class="pub-item">
-            <a href="https://www.credly.com/badges/95f43352-6a0d-4fd8-8adf-f029bd374814/public_url" class="pub-title" rel="noopener" target="_blank">Scrum Foundation Professional Certification</a>
-            <p class="pub-journal"><span class="pub-year">SFPC</span></p>
-          </div>
-          <div class="pub-item">
-            <a href="assets/docs/credentials/mit-course.pdf" class="pub-title">Advanced ML for Big Data and Text Processing</a>
-            <p class="pub-journal"><span class="pub-year">MIT</span></p>
-          </div>
-          <div class="pub-item">
-            <a href="assets/docs/credentials/sas-certificate.png" class="pub-title">Unsupervised and Supervised Modeling</a>
-            <p class="pub-journal"><span class="pub-year">SAS</span></p>
-          </div>
-        </div>
+      <div class="pub-item">
+        <a href="https://www.mdpi.com/2076-2607/11/7/1728" class="pub-title" rel="noopener" target="_blank">The role of carbohydrate intake on the gut microbiome</a>
+        <p class="pub-journal"><span class="pub-year">2023</span> · Microorganisms, MDPI</p>
+      </div>
+      <div class="pub-item">
+        <a href="https://revistafiguras.acatlan.unam.mx/index.php/figuras/article/view/249" class="pub-title" rel="noopener" target="_blank">El espejo digital</a>
+        <p class="pub-journal"><span class="pub-year">2022</span> · Figuras, UNAM</p>
+      </div>
+      <div class="pub-item">
+        <a href="http://link.springer.com/chapter/10.1007/978-3-319-27101-9_42" class="pub-title" rel="noopener" target="_blank">Credit Scoring Model for Payroll Issuers: A Real Case</a>
+        <p class="pub-journal"><span class="pub-year">2015</span> · Springer</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     SKILLS
-     ============================================================ -->
+<!-- PRENSA -->
+<section id="press" class="prensa" aria-labelledby="press-heading">
+  <div class="content-pad">
+    <h2 id="press-heading" class="display-lg text-accent uppercase mb-24 reveal" data-i18n="press.heading">Prensa</h2>
+    <div class="reveal-stagger">
+      <a href="https://forbes.com.mx/inteligencia-artificial-debe-ser-un-complemento-mas-que-un-sustituto-insaite/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Forbes</span>
+        <span>La IA debe ser un complemento más que un sustituto</span>
+      </a>
+      <a href="https://www.elfinanciero.com.mx/tv/entre-mercados/conoce-a-la-empresa-mexicana-que-genera-apps-de-ia/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">El Financiero</span>
+        <span>Conoce a la empresa mexicana que genera apps de IA</span>
+      </a>
+      <a href="https://www.eleconomista.com.mx/revistaimef/Inteligencia-artificial-en-finanzas-un-aliado-en-la-transformacion-20210304-0028.html" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">El Economista</span>
+        <span>IA en finanzas: un aliado en la transformación</span>
+      </a>
+      <a href="https://www.forbes.com.mx/conoce-mejor-a-tus-clientes-con-inteligencia-artificial/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Forbes México</span>
+        <span>Conoce mejor a tus clientes con Inteligencia Artificial</span>
+      </a>
+      <a href="https://www.forbes.com.mx/estos-son-los-profesionistas-por-los-que-pelean-las-empresas/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Forbes México</span>
+        <span>Estos son los profesionistas por los que pelean las empresas</span>
+      </a>
+      <a href="https://www.forbes.com.mx/como-integrar-una-herramienta-predictiva-en-tu-negocio/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Forbes México</span>
+        <span>¿Cómo integrar una herramienta predictiva en tu negocio?</span>
+      </a>
+      <a href="https://www.forbes.com.mx/por-que-no-debes-confundir-big-data-business-intelligence-e-inteligencia-artificial/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Forbes México</span>
+        <span>¿Por qué no debes confundir Big Data, BI e IA?</span>
+      </a>
+      <a href="https://forbescentroamerica.com/2020/01/24/la-inteligencia-artificial-en-el-wef/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Forbes Centroamérica</span>
+        <span>La Inteligencia Artificial en el WEF</span>
+      </a>
+      <a href="https://www.youtube.com/watch?v=E5HvZiZ9Ka8" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">YouTube</span>
+        <span>Entrevista — IA e innovación</span>
+      </a>
+      <a href="https://www.instagram.com/reel/DJKyYGoSmt3/" class="media-link" rel="noopener" target="_blank">
+        <span class="media-outlet">Instagram</span>
+        <span>Reel — Ciencia de datos en acción</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICACIONES -->
+<section id="certifications" class="certificaciones" aria-labelledby="certifications-heading">
+  <div class="content-pad">
+    <h2 id="certifications-heading" class="display-lg text-accent uppercase mb-24 reveal" data-i18n="cert.heading">Certificaciones</h2>
+    <div class="pub-list reveal-stagger">
+      <div class="pub-item">
+        <a href="https://www.credly.com/badges/5e6e473d-fd3b-4dc4-9575-8af76f54f04b/linked_in_profile" class="pub-title" rel="noopener" target="_blank">Professional Machine Learning Engineer</a>
+        <p class="pub-journal"><span class="pub-year">Google</span></p>
+      </div>
+      <div class="pub-item">
+        <a href="https://www.credly.com/badges/81fab727-1749-47f3-905e-9b414dacc6a6/public_url" class="pub-title" rel="noopener" target="_blank">Build and Deploy a GenAI Solution Using RAG</a>
+        <p class="pub-journal"><span class="pub-year">Google</span></p>
+      </div>
+      <div class="pub-item">
+        <a href="https://www.credly.com/badges/95f43352-6a0d-4fd8-8adf-f029bd374814/public_url" class="pub-title" rel="noopener" target="_blank">Scrum Foundation Professional Certification</a>
+        <p class="pub-journal"><span class="pub-year">SFPC</span></p>
+      </div>
+      <div class="pub-item">
+        <a href="assets/docs/credentials/mit-course.pdf" class="pub-title">Advanced ML for Big Data and Text Processing</a>
+        <p class="pub-journal"><span class="pub-year">MIT</span></p>
+      </div>
+      <div class="pub-item">
+        <a href="assets/docs/credentials/sas-certificate.png" class="pub-title">Unsupervised and Supervised Modeling</a>
+        <p class="pub-journal"><span class="pub-year">SAS</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
 <section id="skills" class="skills" aria-labelledby="skills-heading">
   <div class="content-pad">
     <div class="grid-12">
-      <h2 id="skills-heading" class="col-span-12 display-lg uppercase mb-32 reveal">Skills</h2>
+      <h2 id="skills-heading" class="col-span-12 display-lg uppercase mb-32 reveal" data-i18n="skills.heading">Skills</h2>
     </div>
     <div class="grid-4 reveal-stagger" style="max-width: var(--max-width); margin: 0 auto;">
       <div>
-        <h3 class="skill-group-title">AI & ML</h3>
+        <h3 class="skill-group-title">AI &amp; ML</h3>
         <div class="skill-item">Machine Learning <span class="skill-level">Core</span></div>
         <div class="skill-item">Deep Learning <span class="skill-level">Core</span></div>
-        <div class="skill-item">GenAI & RAG <span class="skill-level">Advanced</span></div>
+        <div class="skill-item">GenAI &amp; RAG <span class="skill-level">Advanced</span></div>
         <div class="skill-item">Predictive Modeling <span class="skill-level">Core</span></div>
         <div class="skill-item">Operations Research <span class="skill-level">Advanced</span></div>
       </div>
@@ -435,49 +461,30 @@
   </div>
 </section>
 
-<!-- ============================================================
-     HOBBIES
-     ============================================================ -->
+<!-- HOBBIES -->
 <section id="hobbies" class="hobbies" aria-labelledby="hobbies-heading">
   <div class="content-pad">
-    <h2 id="hobbies-heading" class="display-lg text-accent uppercase mb-32 reveal">Hobbies</h2>
-    <div class="grid-2 reveal-stagger" style="max-width: var(--max-width); margin: 0 auto;">
+    <h2 id="hobbies-heading" class="display-md text-accent uppercase mb-24 reveal" data-i18n="hobbies.heading">Hobbies</h2>
+    <div class="hobby-strip reveal-stagger">
       <div class="hobby-card">
         <img src="assets/photos/hobbies/soccer.webp" alt="Soccer" loading="lazy">
-        <span class="hobby-label">Fútbol</span>
+        <span class="hobby-label" data-i18n="hobby.soccer">Fútbol</span>
       </div>
       <div class="hobby-card">
         <img src="assets/photos/hobbies/visual-kei.webp" alt="Visual Kei" loading="lazy">
-        <span class="hobby-label">Visual Kei</span>
+        <span class="hobby-label" data-i18n="hobby.visualkei">Visual Kei</span>
       </div>
       <div class="hobby-card">
         <img src="assets/photos/hobbies/anime.webp" alt="Anime" loading="lazy">
-        <span class="hobby-label">Anime</span>
+        <span class="hobby-label" data-i18n="hobby.anime">Anime</span>
       </div>
       <div class="hobby-card">
-        <img src="assets/photos/hobbies/videogames.webp" alt="Videogames" loading="lazy">
-        <span class="hobby-label">Videojuegos</span>
+        <img src="assets/photos/hobbies/videogames.webp" alt="Videojuegos" loading="lazy">
+        <span class="hobby-label" data-i18n="hobby.games">Videojuegos</span>
       </div>
-    </div>
-    <p class="mt-16 text-center">
-      <a href="https://www.youtube.com/@solidsnake2301" class="link-underline" rel="noopener" target="_blank">Guitarra · YouTube</a>
-    </p>
-  </div>
-</section>
-
-<!-- ============================================================
-     CONTACTO
-     ============================================================ -->
-<section id="connect" class="contacto" aria-labelledby="connect-heading">
-  <div class="watermark">JOSÉ G. FUENTES</div>
-  <div class="content-pad relative z-1">
-    <div class="contact-block reveal">
-      <h2 id="connect-heading" class="display-lg uppercase mb-16">Contacto</h2>
-      <div class="mb-24">
-        <a href="#" class="contact-email obfuscated-email" data-show="true"></a>
-      </div>
-      <div class="mb-16">
-        <a href="https://www.linkedin.com/in/josegustavofuentescabrera/?locale=en_US" class="contact-social" rel="noopener" target="_blank">LinkedIn</a>
+      <div class="hobby-card">
+        <img src="assets/photos/hobbies/guitar.webp" alt="Guitarra" loading="lazy" onerror="this.parentElement.style.display='none'">
+        <span class="hobby-label" data-i18n="hobby.guitar">Guitarra</span>
       </div>
     </div>
   </div>
@@ -485,22 +492,27 @@
 
 </main>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer class="footer footer-section" role="contentinfo">
-  <div class="watermark">JOSÉ G. FUENTES</div>
-  <p class="footer-copy">© 2026 José G. Fuentes. Rigor arquitectónico a través de IA.</p>
+<!-- FOOTER -->
+<footer id="site-footer" class="footer footer-section" role="contentinfo">
+  <p class="footer-copy">© 2026 Jose Gustavo Fuentes</p>
   <div class="footer-links">
-    <a href="#" class="contact-social">LinkedIn</a>
-    <a href="#" class="contact-social obfuscated-email">Email</a>
+    <a href="https://www.linkedin.com/in/josegustavofuentescabrera/?locale=en_US" class="footer-icon-link" rel="noopener" target="_blank" aria-label="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    </a>
+    <a href="#" class="footer-icon-link obfuscated-email" aria-label="Email">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
   </div>
-  <p class="footer-credit">Fotografía conceptual generada con Gemini</p>
+  <p class="footer-credit" data-i18n="footer.credit">Fotografía conceptual generada con modelos de difusión</p>
 </footer>
 
 <script src="js/scroll.js"></script>
 <script src="js/cursor.js"></script>
 <script src="js/email.js"></script>
-
+<script src="js/i18n.js"></script>
 </body>
 </html>

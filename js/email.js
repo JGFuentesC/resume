@@ -1,6 +1,6 @@
 (function() {
-  var p = ['jose', 'gustavo', 'fuentes'];
-  var d = ['comunidad', 'unam', 'mx'];
+  var p = ['jose', 'fuentes', 'phd'];
+  var d = ['gmail', 'com'];
   var email = p.join('.') + '@' + d.join('.');
 
   var els = document.querySelectorAll('.obfuscated-email');
