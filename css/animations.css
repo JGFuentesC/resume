@@ -1,0 +1,92 @@
+/* ============================================
+   Scroll Reveal
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--duration-reveal) var(--ease-out-expo),
+              transform var(--duration-reveal) var(--ease-out-expo);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--duration-reveal) var(--ease-out-expo),
+              transform var(--duration-reveal) var(--ease-out-expo);
+}
+
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 100ms; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 200ms; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 300ms; }
+.reveal-stagger.visible > *:nth-child(5) { transition-delay: 400ms; }
+.reveal-stagger.visible > *:nth-child(6) { transition-delay: 500ms; }
+.reveal-stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   Parallax
+   ============================================ */
+.parallax {
+  will-change: transform;
+}
+
+/* ============================================
+   Fade in on load
+   ============================================ */
+.fade-in-load {
+  animation: fade-slide-up var(--duration-reveal) var(--ease-out-expo) both;
+}
+
+.fade-in-load-delay-1 { animation-delay: 200ms; }
+.fade-in-load-delay-2 { animation-delay: 400ms; }
+.fade-in-load-delay-3 { animation-delay: 600ms; }
+.fade-in-load-delay-4 { animation-delay: 800ms; }
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   Hover glow
+   ============================================ */
+.hover-glow {
+  transition: box-shadow var(--duration-fast) ease,
+              transform var(--duration-fast) var(--ease-out-expo);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 0 1px var(--accent-gold);
+  transform: scale(1.02);
+}
+
+/* ============================================
+   Smooth transitions
+   ============================================ */
+.transition-colors {
+  transition: color var(--duration-fast) ease,
+              background-color var(--duration-fast) ease,
+              border-color var(--duration-fast) ease;
+}
+
+.transition-opacity {
+  transition: opacity var(--duration-fast) ease;
+}
+
+.transition-transform {
+  transition: transform var(--duration-fast) var(--ease-out-expo);
+}

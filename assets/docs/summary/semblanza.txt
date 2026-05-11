@@ -1,0 +1,21 @@
+El Dr. José Gustavo Fuentes es Licenciado en Matemáticas Aplicadas y Computación por la Universidad Nacional Autónoma de México, 
+tiene una maestría en Inteligencia Analítica y una especialidad en Minería de Datos por la Universidad Anáhuac y 
+es Doctor en Ciencias de la Ingeniería por la Universidad Iberoamericana donde realizó una estancia de investigación en la 
+Universidad de Chile. Adicionalmente, posee estudios de inteligencia artificial avanzada en el Massachusetts Institute of Technology (MIT) y 
+cuenta con la certificación de Google como Professional Machine Learning Engineer. 
+
+Con más de 17 años de experiencia profesional, Gustavo ha resuelto problemas complejos a través de soluciones analíticas y 
+de inteligencia artificial en sectores como finanzas, manufactura, comercio minorista, salud y gobierno. Su habilidad para 
+transformar datos en valor para el negocio ha sido fundamental en proyectos críticos para diversas organizaciones. Además,
+ ha trabajado en Silicon Valley, aportando su experiencia en ciencia de datos y tecnología de punta, 
+ lo que le ha permitido estar a la vanguardia de las innovaciones tecnológicas.
+
+Es cofundador de Insaite, una empresa de inteligencia artificial aplicada con que crea ventajas competitivas
+ para potenciar la rentabilidad de los negocios. También es cofundador y Chief AI Officer en Plurall, plataforma colombiana de 
+ inclusión financiera donde se encarga de la gestión de riesgos y estrategias de datos para otorgar créditos a micro-pymes. 
+ Recientemente fundó Augmented Humans, una plataforma de educación en IA enfocada en la simbiosis humano-máquina para
+ potenciar el intelecto y la creatividad humana.
+
+Gustavo ha sido destacado en medios impresos, radio y televisión 
+por su profundo conocimiento y contribuciones en el campo de la inteligencia artificial y la ciencia de datos. 
+Su capacidad para comunicar conceptos complejos de manera accesible le ha ganado reconocimiento como un líder de pensamiento en su campo.

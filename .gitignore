@@ -1,1 +1,33 @@
+# System
 **/.DS_Store
+Thumbs.db
+
+# Environment & secrets
+*.envrc
+*.env
+.gcloud_config
+
+# Python / image generation
+.venv/
+__pycache__/
+*.pyc
+requirements.txt
+*.py
+
+# Agent tooling (AI coding assistant)
+.agents/
+AGENTS.md
+skills-lock.json
+
+# Unused photo assets (keep locally, not in public repo)
+assets/photos/face/face-2.png
+assets/photos/face/face-2.webp
+assets/photos/face/profile-photo.jpeg
+assets/photos/face/profile-photo.webp
+assets/photos/genai/photo2.png
+assets/photos/genai/photo2.webp
+assets/photos/genai/portfolio-photos-prompts/
+
+# Design exploration / dev artifacts
+docs/plan.md
+ui-inspo/
