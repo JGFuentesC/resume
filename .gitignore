@@ -32,5 +32,8 @@ assets/photos/genai/portfolio-photos-prompts/
 docs/plan.md
 ui-inspo/
 
-# Deployment scripts (infra details, keep local)
+# Deployment (keep local, never commit)
 deploy.sh
+Dockerfile
+nginx.conf
+.gcloudignore
