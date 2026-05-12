@@ -462,6 +462,16 @@
 }
 
 /* ============================================
+   Section: Newsletter
+   ============================================ */
+.newsletter {
+  background: var(--surface);
+  color: var(--on-surface);
+  padding-top: var(--space-gap);
+  padding-bottom: var(--space-gap);
+}
+
+/* ============================================
    Section: Certificaciones
    ============================================ */
 .certificaciones {
