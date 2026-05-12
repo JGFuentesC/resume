@@ -85,6 +85,7 @@
       'pub.heading':  'Publications',
       'press.heading': 'Press',
       'cert.heading': 'Certifications',
+      'newsletter.heading': 'Newsletter',
       /* SKILLS */
       'skills.heading': 'Skills',
       /* HOBBIES */
@@ -221,6 +222,7 @@
       'pub.heading':   '出版物',
       'press.heading': 'メディア',
       'cert.heading':  '資格',
+      'newsletter.heading': 'ニュースレター',
       /* SKILLS */
       'skills.heading': 'スキル',
       /* HOBBIES */
